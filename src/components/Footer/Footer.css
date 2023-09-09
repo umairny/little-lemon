@@ -1,0 +1,42 @@
+footer {
+    background-color: #EDEFEEed;
+    margin: auto;
+    color: #333333;
+}
+
+.content {
+    max-width: 860px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 90px;
+    margin: auto;
+}
+
+.footerLogo {
+    width: 100%;
+    height: 150px;
+}
+
+.content div a {
+    text-decoration: none;
+    color: #495E57;
+}
+
+.content div h3 {
+    color: #495E57;
+}
+
+.content div div {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+}
