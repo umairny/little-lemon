@@ -1,27 +1,21 @@
-import React from 'react'
-import './Nav.css'
+import { Box, Flex, HStack, Spacer } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+
 function Nav() {
     return (
-        <nav>
-            <ul>
-                <li>
-                    <a href="#Home">Home</a>
-                </li>
-                <li>
-                    <a href="#About">About</a>
-                </li>
-                <li>
-                    <a href="#Reservations">Reservations</a>
-                </li>
-                <li>
-                    <a href="#Order online">Order online</a>
-                </li>
-                <li>
-                    <a href="#Login">Login</a>
-                </li>
-
-            </ul>
-        </nav>
+        <Box w='100%' bg='white'>
+            <Flex h='100px' maxW='860px' as="nav" alignItems="center" m='Auto'>
+                <img src="./Logo.svg" alt="Log" width="185px" />
+                <Spacer />
+                <HStack spacing='20px'>
+                    <Link>Home</Link>
+                    <Link>About</Link>
+                    <Link to="#Reservations">Reservations</Link>
+                    <Link to="#Order online">Order online</Link>
+                    <Link to="#Login">Login</Link>
+                </HStack>
+            </Flex>
+        </Box>
     )
 }
 
